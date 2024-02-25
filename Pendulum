@@ -1,0 +1,13 @@
+mport random
+
+def probability_pendulum():
+    outcomes = ["Outcome A", "Outcome B", "Outcome C"]  # Замените на свои варианты
+    probabilities = [0.4, 0.3, 0.3]  # Замените на свои вероятности
+
+    result = random.choices(outcomes, probabilities)[0]
+    return result
+
+# Пример использования
+for _ in range(10):
+    outcome = probability_pendulum()
+    print(f"The pendulum swings, and the outcome is: {outcome}")
